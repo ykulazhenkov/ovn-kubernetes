@@ -82,6 +82,7 @@ type BaseNodeNetworkController struct {
 
 	// stopChan and WaitGroup per controller
 	stopChan chan struct{}
+	errChan  chan error
 	wg       *sync.WaitGroup
 }
 
